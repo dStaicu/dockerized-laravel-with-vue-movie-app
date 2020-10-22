@@ -8,9 +8,8 @@
 
 ## Pentru a rula migrarile si seedurile
 1. docker exec -ti php /bin/sh
-
-php artisan migrate
-php artisan db:seed
+2. php artisan migrate
+3. php artisan db:seed
 
 Acum aplicatia ar trebui sa fie vizibila la 127.0.0.1:8033
 
