@@ -5,6 +5,8 @@
 3. tot in folderul src composer install --no-interaction --ignore-platform-reqs
 4. rulam in terminal docker-compose up -d
 
+Acum aplicatia ar trebui sa fie vizibila la 127.0.0.1:8033
+
 ## Ports
 
 - **nginx** - `:8033`
