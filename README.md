@@ -1,3 +1,5 @@
+o sa incerc sa vin si cu un vue(in functie de cum imi permite timpul)
+
 ## Dockerized Laravel Movie App
 
 1. git clone la repo
