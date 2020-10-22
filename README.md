@@ -4,8 +4,8 @@ o sa incerc sa vin si cu un vue(in functie de cum imi permite timpul)
 
 1. git clone la repo
 2. in folderul src modificam .env.example in .env
-3. tot in folderul src composer install --no-interaction --ignore-platform-reqs
-4. rulam in terminal docker-compose up -d
+3. tot in folderul src rulam din terminal composer install --no-interaction --ignore-platform-reqs
+4. rulam din terminal docker-compose up -d
 
 
 ## Pentru a rula migrarile si seedurile
