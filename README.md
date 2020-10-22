@@ -1,6 +1,4 @@
-o sa incerc sa vin si cu un vue(in functie de cum imi permite timpul)
-
-## Dockerized Laravel Movie App
+## Dockerized Laravel + Vue Movie App
 
 1. git clone la repo
 2. in folderul src modificam .env.example in .env
