@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\MoviesController@index');
+Route::view('/', 'movies');
 Route::get('/list-movies', 'App\Http\Controllers\MoviesController@listMovies');
 Route::get('/add-movie', 'App\Http\Controllers\MoviesController@addMovie');
 Route::get('/delete/{id}', 'App\Http\Controllers\MoviesController@deleteMovie');

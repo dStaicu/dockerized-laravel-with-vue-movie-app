@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Movie;
+use App\Http\Resources\MovieResource;
 
 class MoviesController extends Controller
 {
@@ -13,11 +14,10 @@ class MoviesController extends Controller
 	}
 
 	public function listMovies(){
-
-		return $movies = Movie::all()
+		return MovieResource::collection(Movie::all()
 			->where('rating', '>', 5)
 			->where('status', '=', 1)
-			->toJson();
+		);
 
 	}
 
