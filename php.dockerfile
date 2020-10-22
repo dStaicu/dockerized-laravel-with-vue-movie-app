@@ -11,3 +11,15 @@ RUN chown laravel:laravel /var/www/html
 WORKDIR /var/www/html
 
 RUN docker-php-ext-install pdo pdo_mysql
+
+RUN curl -sS https://getcomposer.org/installer | php
+RUN php composer.phar install
+
+RUN cp .env.example .env
+
+RUN php artisan key:generate
+RUN php artisan config:clear
+RUN php artisan config:cache
+
+RUN php artisan migrate
+RUN php artisan db:seed
