@@ -6,7 +6,7 @@
 3. node
 4. npm
  
-##
+## Steps
 
 1. git clone la repo
 2. in folderul src modificam .env.example in .env
