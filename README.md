@@ -12,8 +12,8 @@
 1. git clone la repo
 2. in folderul src modificam .env.example in .env
 3. tot in folderul src rulam din terminal composer install --no-interaction --ignore-platform-reqs
-4. rulam din terminal docker-compose up -d
-5. npm install & npm run dev and that's all :)
+4. npm install & npm run dev 
+5. rulam din terminal "docker-compose up -d" and that's all :)
 
 Acum aplicatia ar trebui sa fie vizibila la 127.0.0.1:8033
 
