@@ -5,7 +5,7 @@
 2. composer
 3. node
 4. npm
-5. Docker
+5. docker
  
 ## Steps
 
