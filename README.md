@@ -1,5 +1,11 @@
 ## Dockerized Laravel + Vue Movie App
 
+Dependencies: 
+ 1. php
+ 2. composer
+ 3. node
+ 4. npm
+
 1. git clone la repo
 2. in folderul src modificam .env.example in .env
 3. tot in folderul src rulam din terminal composer install --no-interaction --ignore-platform-reqs
