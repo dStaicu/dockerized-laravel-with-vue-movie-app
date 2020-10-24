@@ -1,7 +1,7 @@
 ## Dockerized Laravel + Vue Movie App
 
 ## Dependencies: 
-1. Docker Desktop
+1. Docker
  
 ## Steps
 
