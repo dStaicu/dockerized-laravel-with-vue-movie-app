@@ -1963,7 +1963,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteMovie: function deleteMovie(e) {
       var this_btn = $(e.currentTarget);
       this_btn.closest('.movie_wrapper').remove();
-      axios.get("/delete/".concat(this_btn.attr('movie_id'))).then(function (response) {})["catch"]();
+      axios.get("/delete-movie/".concat(this_btn.attr('movie_id'))).then(function (response) {})["catch"]();
     }
   }
 });
@@ -31987,8 +31987,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\Work\moviesapp\src\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\Work\moviesapp\src\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! F:\Work\moviesappnew\src\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! F:\Work\moviesappnew\src\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
