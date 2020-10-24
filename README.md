@@ -5,9 +5,8 @@
  
 ## Steps
 
-1. git clone la repo
-2. in folderul src modificam .env.example in .env
-3. rulam din terminal "docker-compose up -d" and that's all :)
+1. in folderul src modificam .env.example in .env
+2. rulam din terminal "docker-compose up -d" and that's all :)
 
 !! Dupa ce au fost ridicate containerele se ruleaza automat composer install, php artisan migrate si php artisan seed,
 aplicatia este vizibila in momentul in care s-au instalat pachetele de composer si a terminat 
