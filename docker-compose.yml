@@ -61,12 +61,11 @@ services:
     user: laravel
     networks:
       - laravel
-    entrypoint: ['composer', '--ignore-platform-reqs']
-
-  npm:
-    image: node:13.7
-    container_name: npm
-    volumes:
-      - ./src:/var/www/html
-    working_dir: /var/www/html
-    entrypoint: ['npm']
+    command: bash -c "
+      composer install --ignore-platform-reqs
+      && php artisan key:generate
+      && php artisan config:clear
+      && php artisan config:cache
+      && php artisan migrate
+      && php artisan db:seed
+      "
