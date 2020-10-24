@@ -16,6 +16,12 @@ in momentul in care ultimul mesaj este "Database seeding completed successfully"
 
 Aplicatia ar trebui sa fie acum vizibila la 127.0.0.1:8033
 
+## Endpoints
+
+- /list-movies
+- /delete-movie/{$id}
+- /add-movie?name={$name}&rating={$rating}&description={$description}&image={$image_url}
+
 ## Pentru a rula migrarile si seedurile
 1. docker exec -ti php /bin/sh
 2. php artisan migrate
