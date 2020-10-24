@@ -60,7 +60,7 @@
 
 				this_btn.closest('.movie_wrapper').remove();
 				
-				axios.get(`/delete/${this_btn.attr('movie_id')}`)
+				axios.get(`/delete-movie/${this_btn.attr('movie_id')}`)
 				.then((response) => {
 				})
 				.catch();
