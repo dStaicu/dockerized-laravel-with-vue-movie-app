@@ -10,7 +10,7 @@
 
 !! Dupa ce au fost ridicate containerele se ruleaza automat composer install, php artisan migrate si php artisan seed,
 aplicatia este functionala in momentul in care s-au instalat pachetele de composer si a terminat 
-de migrat. Putem verifica citind log-urile de la composer prin comanda "docker-compose logs composer", aplicatia este vizbila
+de migrat. Putem verifica citind log-urile de la containerul composer prin comanda "docker-compose logs composer", aplicatia este vizbila
 in momentul in care ultimul mesaj este "Database seeding completed successfully". 
 
 Aplicatia ar trebui sa fie acum vizibila la 127.0.0.1:8033
