@@ -5,15 +5,14 @@
  
 ## Steps
 
-1. in folderul src modificam .env.example in .env
-2. rulam din terminal "docker-compose up -d" and that's all :)
+1. change .env.example to .env in '/src'
+2. go to root folder and run "docker-compose up -d"
 
-!! Dupa ce au fost ridicate containerele se ruleaza automat composer install, php artisan migrate si php artisan seed,
-aplicatia este functionala in momentul in care s-au instalat pachetele de composer si a terminat 
-de migrat. Putem verifica citind log-urile de la containerul composer prin comanda "docker-compose logs composer", aplicatia este vizbila
-in momentul in care ultimul mesaj este "Database seeding completed successfully". 
+After all containers are up, composer container will run automatically 'composer install && php artisan migrate && php artisan db:seed"
+The app is working only after the composer has finished installing the packages.
+To see the current status of composer you need to run in terminal "docker-composer logs composer"
 
-Aplicatia ar trebui sa fie acum vizibila la 127.0.0.1:8033
+The app should be visible at 127.0.0.1:8033
 
 ## Endpoints
 
@@ -21,7 +20,7 @@ Aplicatia ar trebui sa fie acum vizibila la 127.0.0.1:8033
 - /delete-movie/{$id}
 - /add-movie?name={$name}&rating={$rating}&description={$description}&image={$image_url}
 
-## Pentru a rula migrarile si seedurile
+## For migrations and seeds
 1. docker exec -ti php /bin/sh
 2. php artisan migrate
 3. php artisan db:seed
